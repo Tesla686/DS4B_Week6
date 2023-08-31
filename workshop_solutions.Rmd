@@ -17,5 +17,16 @@ output:
 # Bonus section
 
 ## Loading the data
+```{r}
+library(tidyverse)
+data <- read.csv("//raw_data,data.csv")
+```
 
 ## An interesting plot
+```{r}
+data |> 
+  ggplot(aes(x=Gravid,y=TempC)) |> 
+  geom_smooth()
+  
+```
+
